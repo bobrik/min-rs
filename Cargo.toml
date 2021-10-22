@@ -1,0 +1,13 @@
+[package]
+name = "min-rs"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[profile.release]
+panic = "abort"
+debug = false
+lto = true
+
+[dependencies]
+libc = { version = "0.2", default-features = false }
